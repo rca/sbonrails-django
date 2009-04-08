@@ -18,4 +18,6 @@ urlpatterns = patterns(
     (r'^admin/', include(admin.site.urls)),
 
     (r'^$', 'uploads.views.index'),
+
+    (r'^uploads/', include('uploads.urls')),
 )
