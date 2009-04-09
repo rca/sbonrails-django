@@ -1,0 +1,9 @@
+{% extends "site/base.html" %}
+
+{% block content %}
+<h1>{{ file }}</h1>
+
+<p>
+Download URL: {{ host }}{% url uploads-get file.download_key %} (<a href="{% url uploads-get file.download_key %}">Download</a>)
+</p>
+{% endblock %}

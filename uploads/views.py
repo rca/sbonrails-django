@@ -42,4 +42,14 @@ def logout(request):
 
 @login_required
 def show(request, id):
-    pass
+    file = File.objects.get(pk=id)
+
+    host = '%s://%s' % (request.META['wsgi.url_scheme'],
+                         request.META['HTTP_HOST'])
+
+    ctx = {
+        'file': file,
+        'host': host,
+        }
+
+    return render_to_response('uploads/show.html', ctx)
