@@ -1,0 +1,15 @@
+h1. Django presentation for sbonrails
+
+This repository contains the evolution of a simple file upload app written in
+Django.  Each commit represents one leap forward, so @git log -p --reverse@
+will show them to you in chronological order (along with the commit messages
+explaining what that step is about).
+
+h2. Further reading
+
+Try the "Django docs":http://docs.djangoproject.com/en/1.0/ ,
+and "Pinax":http://pinaxproject.com/ for prebuilt components.
+
+The introductory slides are "sbonrails-django.pdf":http://timhatch.com/db/posts/2009-04-08.01/sbonrails-django.pdf
+
+
