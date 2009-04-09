@@ -1,0 +1,11 @@
+{% extends "site/base.html" %}
+
+{% block content %}
+<h1>Upload file</h1>
+
+<form method="post" enctype="multipart/form-data" action=".">
+{{ form.as_p }}
+<input type="submit" value="upload" />
+</form>
+
+{% endblock %}
