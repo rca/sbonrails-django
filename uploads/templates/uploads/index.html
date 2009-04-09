@@ -1,0 +1,14 @@
+{% extends "site/base.html" %}
+
+{% block content %}
+<h1>Your Files</h1>
+<ul>
+{% for file in file_list %}
+<li class="{% cycle 'row1' 'row2' %}">
+  <a href="{% url uploads-show file.id %}">{{ file }}</a>
+</li>
+{% empty %}
+<li>You don't have any files yet</li>
+{% endfor %}
+</ul>
+{% endblock %}

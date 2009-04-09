@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>File Uploads</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="links" style="float: right;">
+        <a href="{% url uploads-list %}">List</a> | 
+        <a href="{% url uploads-form %}">Upload</a>
+      </div>
+      <h1>Uploads</h1>
+    </div>
+    {% block content %}{% endblock %}
+  </body>
+</html>
