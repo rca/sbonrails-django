@@ -26,7 +26,8 @@ def form(request):
     return render_to_response('uploads/form.html', ctx)
 
 def get(request, download_key):
-    pass
+    file_obj = File.objects.get(download_key=download_key)
+    return HttpResponseRedirect(file_obj.file.url)
 
 @login_required
 def index(request):
